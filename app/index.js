@@ -2,6 +2,7 @@ const express = require('express');
 
 const sequelize = require('./util/database')
 const Papers = require('./models/papers')
+const Author = require('./models/author')
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/author', require('./routes/author'))
-app.use('/papers', require('./routes/paperss'))
+app.use('/papers', require('./routes/papers'))
 
 (async () =>{
     try {

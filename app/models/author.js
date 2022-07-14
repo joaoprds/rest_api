@@ -1,7 +1,7 @@
 const sequelize = require('sequelize');
 const db = require('../util/database');
 
-const Papers = db.define('papers', {
+const Author = db.define('author', {
     id: {
         type: sequelize.INTEGER,
         autoIncrement: true,
@@ -27,16 +27,7 @@ const Papers = db.define('papers', {
     summary: {
         type: sequelize.STRING,
         allowNull: false
-    },
-    firstparagraph: {
-        type: sequelize.STRING,
-        allowNull: false
-    },
-    body: {
-        type: sequelize.STRING,
-        allowNull: false
-
     }
 })
 
-module.exports = Papers
+module.exports = Author

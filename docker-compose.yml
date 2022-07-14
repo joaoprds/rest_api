@@ -3,7 +3,7 @@ version: '3.8'
 services:
   node_backend:
     container_name: node_teste
-    image: node_teste:0.0.2
+    image: node_teste:0.0.3
     build:
       context: .
     ports:
